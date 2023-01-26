@@ -1,3 +1,7 @@
+/*importing the font in 3 diff sizes from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*inserting background colors in a root so its easy to access later on */
 :root { 
 --Pale-blue: hsl(225, 100%, 94%);
 --Bright-blue: hsl(245, 75%, 52%);
@@ -5,6 +9,47 @@
 --Very-pale-blue: hsl(225, 100%, 98%);
 --Desaturated-blue: hsl(224, 23%, 55%);
 --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*changing the background color, font and layout of the whole page*/
+body {
+    background-color: var(--Pale-blue);
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--Dark-blue);
+}
+
+p {
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+}
+
+main {
+    max-width: 380px;
+    background-color: white;
+    align-items: center;
 }
 
 .attribution { 
