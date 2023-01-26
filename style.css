@@ -18,7 +18,7 @@
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 img {
@@ -27,29 +27,47 @@ img {
 
 /*changing the background color, font and layout of the whole page*/
 body {
-    background-color: var(--Pale-blue);
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Pale-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 0 1.5rem;
+}
+
+button {
+   font-family: 'Red Hat Display', sans-serif;
 }
 
 h1 {
-    font-size: 24px;
     color: var(--Dark-blue);
 }
 
-p {
+p{
     font-size: 16px;
     color: var(--Desaturated-blue);
 }
 
 main {
     max-width: 380px;
+}
+
+main h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main article img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+main article:last-child {
     background-color: white;
-    align-items: center;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1.5rem;
 }
 
 .attribution { 
