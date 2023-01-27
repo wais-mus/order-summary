@@ -47,16 +47,19 @@ h1 {
 }
 
 p{
-    font-size: 16px;
+    font-size: 14px;
     color: var(--Desaturated-blue);
+   
 }
 
 main {
-    max-width: 380px;
+    max-width: 355px;
 }
 
 main h1 {
     font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -68,6 +71,56 @@ main article:last-child {
     background-color: white;
     border-radius: 0 0 1rem 1rem;
     padding: 1.5rem;
+    margin-top: -1rem;
+    text-align: center;
+}
+
+main p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+main ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+main ul li:first-child {
+    padding-right: 2em;
+    max-width: 100%
+}
+
+main ul li   {
+    align-items: center;
+    flex-direction: column;
+}
+
+.plan {
+    color: var(--Desaturated-blue);
+    
+}
+
+main .btn {
+    background-color: var(--Bright-blue);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .btn:hover {
+    background-color: hsl(245, 70%, 61%);
 }
 
 .attribution { 
