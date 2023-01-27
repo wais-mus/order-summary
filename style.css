@@ -27,78 +27,100 @@ img {
 
 /*changing the background color, font and layout of the whole page*/
 body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    background-color: var(--Pale-blue);
+
+    display: grid;
+    place-items: center;
+
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
-    background-color: var(--Pale-blue);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
     min-height: calc(100vh - 0.1px);
     margin: 0 1.5rem;
 }
 
-button {
-   font-family: 'Red Hat Display', sans-serif;
-}
-
-h1 {
-    color: var(--Dark-blue);
-}
-
-p{
-    font-size: 14px;
-    color: var(--Desaturated-blue);
-   
-}
-
 main {
-    max-width: 355px;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0 20px 30px -8px hsl(223, 31%, 52%);
+    font-size: 16px;
+}
+
+main article img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+main article:last-child {
+    padding: 1.5rem;
+    margin-top: -1rem;
+    text-align: center;
 }
 
 main h1 {
+    color: var(--Dark-blue);
     font-size: 1.5rem;
     font-weight: 900;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-main article img {
-    border-radius: 1rem 1rem 0 0;
-}
-
-main article:last-child {
-    background-color: white;
-    border-radius: 0 0 1rem 1rem;
-    padding: 1.5rem;
-    margin-top: -1rem;
-    text-align: center;
-}
-
 main p {
-    margin-bottom: 1rem;
     font-weight: 500;
-}
-
-main ul {
-    display: flex;
-    align-items: center;
+    line-height: 24px;
+    font-size: 14px;
+    color: var(--Desaturated-blue);
     margin-bottom: 1rem;
-}
-
-main ul li:first-child {
-    padding-right: 2em;
-    max-width: 100%
-}
-
-main ul li   {
-    align-items: center;
-    flex-direction: column;
 }
 
 .plan {
-    color: var(--Desaturated-blue);
-    
+    background-color: hsl(245, 70%, 61%, 4%);
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem ;  
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.plan .plan-description  {
+    line-height: 28px;
+    margin-right: 1rem;
+    margin-left: -4rem;
+    margin-top: 1rem;
+}
+
+.plan .plan-type {
+    color: var(--Dark-blue);
+}
+
+.plan .plan-cost {
+    font-size: 16px;
+}
+
+.plan img {
+    padding-right: 0.5rem;
+    max-width: 20%;
+
+}
+
+.plan .link-change {
+    color: var(--Bright-blue);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.plan .link-change:hover{
+    color: hsl(245, 70%, 61%);
+    text-decoration: none;
 }
 
 main .btn {
@@ -121,6 +143,22 @@ main .btn {
 
 main .btn:hover {
     background-color: hsl(245, 70%, 61%);
+    opacity:0.8 ;
+}
+
+main .btn-close {
+    background-color: white;
+    color: var(--Dark-blue);
+    font-weight: 700;
+    font-size: .8rem;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+main .btn-close:hover{
+    color: hsl(223, 34%, 53%);
 }
 
 .attribution { 
